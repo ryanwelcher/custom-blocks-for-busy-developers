@@ -1,5 +1,5 @@
 {
-	"name": "no-time-demo",
+	"name": "custom-blocks-for-busy-developers",
 	"version": "0.1.0",
 	"description": "Example block scaffolded with Create Block tool.",
 	"author": "The WordPress Contributors",
@@ -16,5 +16,6 @@
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^30.25.0"
-	}
+	},
+	"prettier": "@wordpress/prettier-config"
 }

@@ -4,5 +4,5 @@
  */
 ?>
 <p <?php echo get_block_wrapper_attributes(); ?>>
-	<?php esc_html_e( 'Dynamic Example – hello from a dynamic block!', 'dynamic-example' ); ?>
+	<?php esc_html_e( 'Practice JavaScript Concepts – hello from a dynamic block!', 'practice-imports-exports' ); ?>
 </p>

@@ -1,19 +1,25 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/static-example",
+	"name": "custom-blocks-for-busy-developers/practice-javascript-concepts",
 	"version": "0.1.0",
-	"title": "Static Example",
+	"title": "Practice JavaScript Concepts",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
+	"attributes": {
+		"message": {
+			"type": "string",
+			"default": "Let's practice import and exports."
+		}
+	},
 	"example": {},
 	"supports": {
 		"html": false
 	},
-	"textdomain": "static-example",
+	"textdomain": "practice-imports-exports",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
-	"viewScript": "file:./view.js"
+	"render": "file:./render.php"
 }
