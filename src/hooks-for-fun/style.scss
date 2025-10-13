@@ -1,0 +1,113 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-custom-blocks-for-busy-developers-hooks-for-fun {
+	display: flex;
+	gap: 1.5rem;
+	padding: 1.5rem;
+	background: var(--wp--preset--color--base, #fff);
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+	max-width: 800px;
+	margin: 1rem auto;
+
+	&:hover {
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	img, .movie-poster {
+		width: 200px;
+		height: 300px;
+		border-radius: 6px;
+		border: 1px solid var(--wp--preset--color--contrast-3, #ddd);
+		object-fit: cover;
+		flex-shrink: 0;
+	}
+
+	.movie-poster {
+		background-color: var(--wp--preset--color--contrast-3, #ddd);
+		&.loading {
+			animation: pulseBackground 0.6s infinite alternate;
+		}
+	}
+
+
+	.movie-details {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		justify-content: space-between;
+
+		h2, h3 {
+			margin: 0;
+			color: var(--wp--preset--color--contrast, #1a1a1a);
+		}
+
+		h2 {
+			font-size: 1.75rem;
+			font-weight: 700;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			font-weight: 600;
+			margin-top: 0.5rem;
+		}
+
+		p {
+			margin: 0;
+			line-height: 1.6;
+			color: var(--wp--preset--color--contrast-2, #4a4a4a);
+		}
+
+		.movie-meta {
+			display: flex;
+			gap: 1rem;
+			flex-wrap: wrap;
+			font-size: 0.9rem;
+			color: var(--wp--preset--color--contrast-3, #666);
+
+			span {
+				&::before {
+					content: '• ';
+					margin-right: 0.25rem;
+				}
+
+				&:first-child::before {
+					content: '';
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	// Responsive design for mobile
+	@media (max-width: 640px) {
+		flex-direction: column;
+
+		img {
+			width: 100%;
+			max-width: 300px;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+@keyframes pulseBackground {
+  0% {
+    opacity: 0.8; /* Starting opacity */
+  }
+  50% {
+    opacity: 1; /* Full opacity at midpoint */
+  }
+  100% {
+    opacity: 0.8; /* Return to starting opacity */
+  }
+}

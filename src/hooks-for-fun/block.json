@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "custom-blocks-for-busy-developers/hooks-for-fun",
+	"version": "0.1.0",
+	"title": "Hooks For Fun",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"poster": {
+			"type": "string"
+		},
+		"movie": {
+			"type": "string"
+		},
+		"year": {
+			"type": "string"
+		},
+		"director": {
+			"type": "string"
+		}
+	},
+	"textdomain": "hooks-for-fun",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
